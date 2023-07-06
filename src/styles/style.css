@@ -27,6 +27,10 @@ img {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -156,6 +160,9 @@ footer > div > div > img {
   width: 124px;
 }
 
+body > div:first-of-type {
+  display: none;
+}
 header {
   position: absolute;
   padding: 10px 80px;
@@ -168,7 +175,8 @@ header {
 }
 
 .logo {
-  width: 150px;
+  height: 52px;
+  /* width: 150px; */
 }
 
 h1 {
@@ -270,11 +278,34 @@ article:nth-of-type(2) > section {
   gap: 30px;
   width: 90vw;
 }
+
+button {
+  background-color: transparent;
+  border: none
+}
+
+.open__image, #menu-close {
+  width: 27px;
+}
+
+#menu-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+header > div {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .box {
     width: 310px;
   }
 
+  header {
+    padding: 10px 30px;
+  }
   main > div:first-of-type > p {
     width: 80%;
   }
@@ -347,6 +378,45 @@ article:nth-of-type(2) > section {
 
   article > div > div > img {
     width: 100%;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > div {
+    display: inline-block;
+  }
+
+  body > div:first-of-type {
+    position: absolute;
+    width: 200px;
+    height: 45%;
+    display: flex;
+    right: 0;
+    top: 0;
+    background-color: #cecece;
+    z-index: 5;
+    border-radius: 0 0 0 70%;
+  }
+
+  #burger-menu > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #burger-menu {
+    position: absolute;
+    transform: translateX(100%);
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+
+  .open {
+    transform: translateX(0%) !important;
   }
 }
 
