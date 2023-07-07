@@ -185,6 +185,7 @@ h1 {
   top: 65%;
   left: 80px;
   color: white;
+  background-color: rgba(0, 0, 0, 50%);
   position: absolute;
 }
 
@@ -196,17 +197,25 @@ main > div:first-of-type > p {
   font-weight: 500;
   line-height: 20px;
   color: white;
+  background-color: rgba(0, 0, 0, 50%);
   width: 60%;
 }
 
 nav {
   display: flex;
+  background-color: rgba(0, 0, 0, 50%);
   gap: 20px;
+  padding: 5px 10px;
   font-weight: bold;
 }
 
 nav > a {
   color: white;
+  transition: all 0.2s linear;
+}
+
+nav > a:hover {
+  color: bisque;
 }
 
 h2 {
@@ -319,6 +328,11 @@ header > div {
 .location > div:last-of-type > div > a {
   font-weight: bold;
   font-size: 18px;
+  transition: all 0.2s linear;
+}
+
+.location > div:last-of-type > div > a:hover {
+  color: brown;
 }
 
 .location > div:last-of-type {
@@ -398,10 +412,6 @@ footer > div > a {
     padding: 20px 16px;
   }
 
-  .logo {
-    width: 100px;
-  } 
-
   h1 {
     left: 20px;
     top: 60%;
@@ -453,6 +463,8 @@ footer > div > a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: transparent;
+    padding: 0;
     justify-content: center;
     text-align: center;
   }
