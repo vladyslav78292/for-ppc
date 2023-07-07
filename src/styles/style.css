@@ -148,9 +148,8 @@ footer > div {
 footer > div:first-of-type {
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 30px;
 }
-
+article > div > div
 footer > div > div > img {
   width: 124px;
 }
@@ -183,7 +182,7 @@ main {
 h1 {
   font-size: 45px;
   top: 65%;
-  left: 80px;
+  right: 80px;
   color: white;
   background-color: rgba(0, 0, 0, 50%);
   position: absolute;
@@ -192,7 +191,7 @@ h1 {
 main > div:first-of-type > p {
   position: absolute;
   top: 75%;
-  left: 80px;
+  right: 80px;
   font-size: 21px;
   font-weight: 500;
   line-height: 20px;
@@ -317,6 +316,7 @@ header > div {
   margin-top: 40px;
   background: linear-gradient(transparent, #eee);
   width: 90vw;
+  padding-bottom: 60px;
 }
 
 .location > div:last-of-type > div {
@@ -367,6 +367,10 @@ footer > div > a {
     width: 310px;
   }
 
+  article > div > div {
+    flex-direction: column;
+  }
+
   header {
     padding: 10px 30px;
   }
@@ -413,7 +417,7 @@ footer > div > a {
   }
 
   h1 {
-    left: 20px;
+    right: 20px;
     top: 60%;
     line-height: 30px;
     font-size: 35px;
@@ -422,13 +426,9 @@ footer > div > a {
   main > div:first-of-type > p {
     font-size: 18px;
     line-height: 24px;
-    left: 20px;
+    right: 20px;
     width: 80%;
     top: 68%;
-  }
-
-  article > div > div {
-    flex-direction: column;
   }
 
   article > div > div > p {
@@ -506,7 +506,7 @@ footer > div > a {
 
 @media (max-width: 420px) {
   h1 {
-    left: 20px;
+    right: 20px;
     top: 50%;
     line-height: 30px;
     font-size: 30px;
@@ -515,7 +515,7 @@ footer > div > a {
   main > div:first-of-type > p {
     font-size: 18px;
     line-height: 24px;
-    left: 20px;
+    right: 20px;
     width: 80%;
     top: 57%;
   }
