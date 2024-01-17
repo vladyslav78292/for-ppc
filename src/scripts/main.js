@@ -1,5 +1,24 @@
 'use strict';
 
+let counter = 0;
+
+for (const menu of document.querySelectorAll(".content-menu")) {
+  menu.addEventListener("click", () => {
+      menu.querySelector(".menu-text").classList.toggle("menu-text-open");
+      menu.querySelector(".list_titles").classList.toggle("active_menu");
+      if (counter % 2 === 0) {
+        menu.classList.add("active");
+      } else {
+        menu.classList.remove("active");
+      }
+      counter = counter + 1;
+      menu.querySelector(".menu-content").classList.toggle(
+          "menu-content-hidden"
+      );
+      console.log(counter)
+  });
+}
+
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
@@ -20,33 +39,3 @@ dropdowns.forEach(dropdown => {
     });
   });
 });
-
-const button = $('#button');
-const header = $('#header');
-const button_pp = $('#button_pp');
-
-button.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
-$("#cookie-popup button").click(function() {
-  $("#cookie-popup").fadeOut();
-});
-
-
-let oldScrollTopPosition = 400;
-
-window.onscroll = () => {
-	const scrollTopPosition = document.documentElement.scrollTop;
-	console.log(oldScrollTopPosition < scrollTopPosition);
-  if (oldScrollTopPosition < scrollTopPosition) {
-    button.addClass('show');
-    button_pp.addClass('show');
-    header.addClass('header__background');
-  } else {
-    button.removeClass('show');
-    button_pp.removeClass('show');
-    header.removeClass('header__background');
-  }
-}
