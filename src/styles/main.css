@@ -169,7 +169,7 @@ main img {
 table td {
   border: 1px solid #fff;
   padding: 10px;
-  color: rgb(23,105,255);
+  color: black;
   vertical-align: middle;
 }
 
@@ -181,9 +181,12 @@ td:first-of-type {
   text-align: center;
 }
 
+strong {
+  color: rgb(23,105,255) ;
+}
+
 td > p {
   margin: 0;
-  color: rgb(23,105,255);
 }
 
 li {
