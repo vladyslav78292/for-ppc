@@ -159,8 +159,11 @@ table {
 }
 
 tbody {
-  width: 100%;
-  
+  width: 100%; 
+}
+
+main img {
+  border-radius: 30px;
 }
 
 table td {
