@@ -180,7 +180,6 @@ footer {
 
 .footer_container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
@@ -207,20 +206,24 @@ footer a {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: 0 10px;
 }
 
 .footer_icon {
+  opacity: 0.65;
   height: 40px;
 }
 
 .BGA {
-  height: 25px;
+  width: 160px;
+  height: 20px;
 }
 
 .links {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   justify-content: space-evenly;
 }
@@ -483,8 +486,17 @@ footer > div {
     flex-direction: column;
   }
 
+  .footer_container {
+    flex-direction: column;
+  }
+
   .text_container div:first-of-type {
     align-self: flex-start;
+  }
+
+  .links, .footer_icons {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .games_grid {
@@ -543,10 +555,6 @@ footer > div {
 
   .footer_icons {
     gap: 20px ;
-  }
-
-  .footer_icon {
-    height: 30px;
   }
 
   .footer_icons {
