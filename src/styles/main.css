@@ -243,10 +243,6 @@ footer a {
   text-decoration: none;
 }
 
-main > div:first-of-type {
-  border-bottom: 1px solid #ed1c24;
-}
-
 .center_image {
   position: relative;
   left: 50%;
@@ -257,6 +253,11 @@ main > div:first-of-type {
 
 section:first-of-type {
   padding: 0px;
+}
+
+.text_container .table_container {
+  position: relative;
+  right: 15%;
 }
 
 h1 {
@@ -465,6 +466,10 @@ footer > div {
 
   .game_img img {
     height: 150px;
+  }
+
+  .text_container .table_container {
+    right: 0%;
   }
 }
 
