@@ -169,7 +169,7 @@ main {
 }
 
 .providers {
-  width: 50%;
+  width: 60%;
 }
 
 footer {
@@ -207,7 +207,7 @@ footer a {
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0 10px;
 }
 
@@ -222,7 +222,7 @@ footer a {
 .links {
   display: flex;
   gap: 10px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .footer_text {
@@ -440,6 +440,16 @@ footer > div {
   align-items: center;
 }
 
+.text_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_container table {
+  min-width: 250px;
+}
+
 @keyframes zoom {
   0%, 100% {
     transform: scale(1,1);
@@ -462,6 +472,14 @@ footer > div {
   .dropdown {
     width: auto;
     margin-left: 0;
+  }
+
+  .text_container {
+    flex-direction: column;
+  }
+
+  .text_container div:first-of-type {
+    align-self: flex-start;
   }
 
   .games_grid {
