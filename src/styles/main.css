@@ -180,9 +180,11 @@ footer {
 
 .footer_container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
+  gap: 30px;
 }
 
 footer > div > div {
@@ -219,10 +221,8 @@ footer a {
 
 .links {
   display: flex;
-  flex-direction: column;
   gap: 10px;
-  /* align-items: start;
-  width: fit-content; */
+  justify-content: space-around;
 }
 
 .footer_text {
@@ -462,11 +462,6 @@ footer > div {
   .dropdown {
     width: auto;
     margin-left: 0;
-  }
-
-  .footer_container {
-    flex-direction: column;
-    gap: 50px;
   }
 
   .games_grid {
