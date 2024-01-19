@@ -72,8 +72,14 @@ main {
   margin: 15px auto;
 }
 
+.application {
+  margin-top: 0px !important;
+  margin-bottom: 15px;
+}
+
 .games_grid {
   display: grid;
+  margin-bottom: 15px;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
