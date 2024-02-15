@@ -37,6 +37,7 @@ header > div {
   margin: 0 auto;
 }
 .buttons {
+  align-items: center;
   display: flex;
   gap: 20px;
 }
@@ -108,7 +109,7 @@ main {
 }
 
 .addictional a {
-  color: black;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
 }
@@ -245,6 +246,10 @@ footer a {
   color: #fff;
 }
 
+.theme-dark table tr:nth-child(2n+1), .table tr:nth-child(2n+1) {
+  background-color: black;
+}
+
 .links {
   display: flex;
   gap: 10px;
@@ -323,11 +328,31 @@ main img {
   border-radius: 30px;
 }
 
+.table_image {
+  height: 30px;
+}
+
+table {
+  display: block;
+  margin: 15px auto;
+  border-collapse: collapse;
+  width: fit-content;
+  min-width: 450px;
+}
+
+tbody {
+  width: 100%; 
+}
+
 table td {
   border: 1px solid #fff;
   padding: 10px;
   color: black;
   vertical-align: middle;
+}
+
+table tr:nth-child(2n+1), .table tr:nth-child(2n+1) {
+  background-color: #eef0f3;
 }
 
 td:first-of-type {
@@ -336,6 +361,8 @@ td:first-of-type {
 
 td > p {
   margin: 0;
+  display: flex;
+  gap: 10px;
 }
 
 li {
@@ -492,6 +519,20 @@ footer > div {
 }
 
 @media (max-width: 1024px) {
+  .responsibility {
+    display: none;
+  }
+
+  header > div {
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image_container {
+    flex-direction: column;
+  }
+
   .dropdown {
     width: auto;
     margin-left: 0;
@@ -507,11 +548,6 @@ footer > div {
 
   .text_container div:first-of-type {
     align-self: flex-start;
-  }
-
-  .links, .footer_icons {
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .games_grid {
@@ -636,8 +672,8 @@ footer > div {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 50px;
+  height: 26px;
 }
 
 .switch input {
@@ -661,8 +697,8 @@ footer > div {
 .slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   left: 0px;
   bottom: 4px;
   top: 0;
