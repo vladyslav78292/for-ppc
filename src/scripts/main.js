@@ -1,18 +1,16 @@
-const html = document.querySelector('.theme-light');
-const switch_theme = document.querySelector('.slider');
-let counter = 0;
+// const html = document.querySelector('.html');
+// const switch_theme = document.querySelector('.slider');
+// let counter = 1;
 
-switch_theme.addEventListener('click', () => {
-  counter++;
+// switch_theme.addEventListener('click', () => {
 
-  if (html.classList[0] === ('theme-light') && html.classList.length === 1) {
-    html.classList.remove('theme-light');
-    html.className += 'theme-dark';
-    console.log(12345);
-  } else if (html.classList[0] === ('theme-dark')) {
-    console.log(123);
-    html.classList.remove('theme-dark');
-    html.className += 'theme-light';
-  }
-
-});
+//   if (counter%2 !== 0) {
+//     html.classList.remove('theme-light');
+//     html.className += ' theme-dark';
+//     counter++;
+//   } else {
+//     html.classList.remove('theme-dark');
+//     html.className += ' theme-light';
+//     counter++;
+//   }
+// });

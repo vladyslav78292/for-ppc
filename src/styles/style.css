@@ -43,7 +43,7 @@ header > div {
 }
 
 .buttons > a:first-of-type {
-  color: #cfd4d8;
+  border: 1px solid #21AD67;
   background-color: #22262a;
 }
 
@@ -53,8 +53,8 @@ header > div {
   padding: 10px 20px;
   font-weight: 800;
   border-radius: 5px;
-  background-color: #32d74b;
-  color: #cfd4d8;
+  background-color: #21AD67;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -104,8 +104,12 @@ main {
 
 .addictional {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   justify-content: space-evenly;
+}
+
+.leon_casino {
+  width: 50%;
 }
 
 .addictional a {
@@ -210,7 +214,7 @@ footer > div > div {
 }
 
 footer p {
-  color: #22262A;
+  color: #fff;
   text-align: center;
 }
 
@@ -239,7 +243,7 @@ footer a {
 }
 
 .theme-dark main {
-  background-color: #16191C;
+  background-color: black;
 }
 
 .theme-dark p, .theme-dark a, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark li {
@@ -252,8 +256,8 @@ footer a {
 
 .links {
   display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
+  gap: 30px;
+  justify-content: center;
 }
 
 .footer_text {
@@ -303,6 +307,10 @@ p {
 h2, h3, h4 {
   color: #22262A;
   font-size: 28px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -1.2px;
@@ -496,6 +504,38 @@ footer > div {
   min-width: 250px;
 }
 
+.question {
+  height: 30px;
+}
+
+.jogos_container {
+  justify-content: space-evenly;
+}
+
+.homepage_container {
+  justify-content: space-evenly;
+}
+
+.rodas, .chuva {
+  width: 250px;
+}
+
+.app_container {
+  justify-content: center;
+}
+
+.app_container > div {
+  width: 50%;
+}
+
+.homepage {
+  width: 50%;
+}
+
+.bonus {
+  width: 40%;
+}
+
 @keyframes zoom {
   0%, 100% {
     transform: scale(1,1);
@@ -521,6 +561,14 @@ footer > div {
 @media (max-width: 1024px) {
   .responsibility {
     display: none;
+  }
+
+  .homepage, .app_container > div, .bonus {
+    width: 100%;
+  }
+
+  .leon_casino {
+    width: 100%;
   }
 
   header > div {
@@ -567,6 +615,7 @@ footer > div {
   .homepage {
     width: 100%;
   }
+
 }
 
 
@@ -644,7 +693,7 @@ footer > div {
 }
 
 .theme-dark {
-  background-color: black;
+  background-color: #16191C;
 }
 
 .container {
