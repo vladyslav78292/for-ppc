@@ -32,7 +32,18 @@ body {
 }
 
 h1 {
-  padding: 30px 0 20px;
+  padding: 30px 10px 20px 10px;
+  font-size: 36px;
+}
+
+.check_container p {
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  height: 30px;
+  margin-right: 10px;
 }
 
 header {
