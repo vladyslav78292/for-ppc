@@ -138,12 +138,30 @@ ol li::before {
   color: #28263A;
   margin-left: 10px;
   text-transform: uppercase;
+  width: fit-content;
   font-weight: bold;
   border-radius: 25px;
   margin-top: 50px;
   display: inline-block;
   padding: 9px 21px;
   background-color: #FFA512;
+}
+
+.app_homepage {
+  width: 40%;
+}
+
+.homepage_buttons {
+  display: flex;
+  gap: 20px;
+}
+
+main section .table_title {
+  text-align: start;
+}
+
+.app_table {
+  white-space: nowrap;
 }
 
 .menuDesktop a {
@@ -456,6 +474,10 @@ ul li {
     margin-left: 0;
     text-align: center;
     transform: translateX(-50%);
+  }
+
+  .app_homepage {
+    width: 100%;
   }
 
   .kayit {
@@ -888,6 +910,14 @@ nav ul li a:hover {
 @media (max-width: 1200px) {
   .header_holder {
     display: block;
+  }
+
+  .homepage_button:nth-of-type(2) {
+    margin-top: 0;
+  }
+
+  .homepage_buttons {
+    flex-direction: column;
   }
 
   .device-menu .device-menu__inner {
