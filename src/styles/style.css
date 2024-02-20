@@ -115,6 +115,8 @@ ol {
   margin-top: 20px;
   padding-left: 70px;
   counter-reset: li;
+  display: flex;
+  flex-direction: column;
 }
 
 ol li {
@@ -134,6 +136,7 @@ ol li::before {
 
 .homepage_button {
   color: #28263A;
+  margin-left: 10px;
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 25px;
@@ -416,6 +419,10 @@ section:first-of-type {
   list-style: none;
 }
 
+em {
+  color: #FFA512;
+}
+
 .categories .categories__container a {
   display: flex;
   justify-content: center;
@@ -425,6 +432,11 @@ section:first-of-type {
   height: 77px;
   padding: 12px 1px;
   border-radius: 20px;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 20px;
 }
 
 @media (max-width: 1400px) {
@@ -441,6 +453,7 @@ section:first-of-type {
   .homepage_button {
     position: relative;
     left: 50%;
+    margin-left: 0;
     text-align: center;
     transform: translateX(-50%);
   }
