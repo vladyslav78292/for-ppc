@@ -131,7 +131,7 @@ ol li::before {
   left: -65px;
   border: 1px solid #10AD77; 
   border-radius: 50%; 
-  padding: 12px 20px;
+  padding: 5px 12px;
 }
 
 .homepage_button {
@@ -650,7 +650,7 @@ ul li {
 }
 
 .steps img {
-  width: 30%;
+  width: 20%;
 }
 
 .header_links {
