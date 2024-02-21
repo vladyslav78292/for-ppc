@@ -147,6 +147,10 @@ ol li::before {
   background-color: #FFA512;
 }
 
+.homepage {
+  width: 50%;
+}
+
 .app_homepage {
   width: 40%;
 }
@@ -455,6 +459,10 @@ em {
 ul li {
   list-style-type: none;
   padding-left: 20px;
+}
+
+.pagamento_images img {
+  width: 47%;
 }
 
 @media (max-width: 1400px) {
@@ -877,6 +885,10 @@ nav ul li a:hover {
   top: 100%;
   -webkit-transition: rotate, 0.3s;
   transition: rotate, 0.3s;
+}
+
+.pagamento_button {
+  margin-top: 20px;
 }
 
 .device-menu.open span:nth-child(1) {
