@@ -180,6 +180,24 @@ a {
   text-decoration: none;
 }
 
+.section_button {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  display: flex;
+  width: min-content;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #FFA512;
+  white-space: nowrap;
+  position: relative;
+  left: 50%;
+  text-decoration: none;
+  transform: translateX(-50%);
+  border-radius: 25px;
+}
+
 .button {
   padding: 10px 20px;
   font-weight: 500;
