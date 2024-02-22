@@ -661,6 +661,10 @@ table p {
   width: 280px;
 }
 
+.casino_section strong {
+  color: #ffa512;
+}
+
 .check_container > li {
   list-style-type: none;
 }
