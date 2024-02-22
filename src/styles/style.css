@@ -649,8 +649,28 @@ ul li {
   justify-content: center;
 }
 
+table p {
+  padding: 0;
+}
+
+.casino_images {
+  margin-top: 15px;
+}
+
+.casino_images img {
+  width: 280px;
+}
+
+.check_container > li {
+  list-style-type: none;
+}
+
 .steps img {
   width: 20%;
+}
+
+.computers img {
+  width: 30%;
 }
 
 .header_links {
