@@ -330,9 +330,12 @@ footer {
   flex-direction: column;
 }
 
+footer > div {
+  max-width: 88%;
+}
+
 footer div:last-of-type {
   color: #fff;
-  font-weight: bold;
 }
 
 .footer_logo {
@@ -340,12 +343,12 @@ footer div:last-of-type {
 }
 
 .mail {
-  color: #28263A;
+  color: #FFA512;
 }
 
 .footer_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .gambling_aware {
