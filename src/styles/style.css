@@ -633,6 +633,15 @@ ul li {
   opacity: 0.8;
 }
 
+.teams_container {
+  display: flex;
+  justify-content: center;
+}
+
+.Teams {
+  width: 100%;
+}
+
 .dropdown__element {
   display: flex;
   justify-content: space-between;
