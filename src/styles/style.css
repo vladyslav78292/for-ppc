@@ -526,6 +526,12 @@ ul li {
   width: 47%;
 }
 
+.footer_images_container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
 @media (max-width: 1400px) {
   .categories .categories__container {
     grid-template-columns: repeat(2,1fr);
