@@ -61,6 +61,7 @@ header {
   width: 85%;
   margin: 0 auto;
   display: flex;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -532,6 +533,10 @@ ul li {
   width: 50%;
 }
 
+.banner_container img {
+  width: 100%;
+}
+
 @media (max-width: 1400px) {
   .categories .categories__container {
     grid-template-columns: repeat(2,1fr);
@@ -541,6 +546,16 @@ ul li {
 @media (max-width: 1024px) {
   .image_container {
     flex-direction: column;
+  }
+
+  .footer_text {
+    width: 100%;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .homepage_button {
@@ -571,6 +586,16 @@ ul li {
     padding-right: 20px;
     margin-right: 0;
     width: 100%;
+  }
+
+  .categories__container li {
+    padding-left: 0;
+  }
+
+  .footer_images_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .logButton {
@@ -1052,5 +1077,11 @@ nav ul li a:hover {
 
   .device-menu {
     height: 50px;
+  }
+}
+
+@media (max-width:420px) {
+  .categories__container img {
+    width: 100%;
   }
 }
